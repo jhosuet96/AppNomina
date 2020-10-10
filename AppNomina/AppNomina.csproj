@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Rotativa.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Wkhtmltopdf.NetCore" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\AppNominas.Repositorys\AppNominas.Repository.csproj" />
+    <ProjectReference Include="..\AppNominas.Services\AppNominas.Service.csproj" />
+    <ProjectReference Include="..\AppNominas.Model\AppNominas.Model.csproj" />-->
+    <ProjectReference Include="..\AppNominas.Model\AppNominas.Model.csproj" />
+    <ProjectReference Include="..\AppNominas.Repository\AppNominas.Repository.csproj" />
+    <ProjectReference Include="..\AppNominas.Service\AppNominas.Service.csproj" />
+  </ItemGroup>
+
+</Project>
